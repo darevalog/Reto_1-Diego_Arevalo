@@ -91,6 +91,11 @@ def palindromo(palabra):
         derecha -= 1
     print("\nLa palabra es un palindromo.\n")
 
+    """ La funció evalua si los valores extremos de la palabra son iguales, si no lo son, imprime
+    que la palabra no es un palindromo. Si son iguales, la función inicia a evaluar la igualdad de 
+    los valores cada vez más centrales hasta llegar a evaluarlos todos y concluir que sí es un palíndromo.
+    """
+
 palabra = input("\nIngrese la palabra que desea verificar si es un palindromo: ")
 palindromo(palabra)
 ```
