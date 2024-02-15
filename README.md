@@ -2,7 +2,7 @@
 
 ## Solución del reto uno de Programación Orientada a Objetos 
 
-### `1. OPERACIONES BÁSICAS`
+### 1. `OPERACIONES BÁSICAS`
 Crear una función que realice operaciones básicas (suma, resta, multiplicación, división) entre dos números, según la elección del usuario, la forma de entrada de la función será los dos operandos y el caracter usado para la operación. *entrada:* `(1,2,"+")`, *salida* `(3)`.
 ```python
 def oprecaione_basicas(numero_1, numero_2, operacion):  
