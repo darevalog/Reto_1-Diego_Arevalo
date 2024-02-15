@@ -1,4 +1,4 @@
-# Reto 1 POO // Diego Arévalo
+# Reto 1 POO // Diego Alejandro Arévalo Guevara
 
 ## Solución del reto uno de Programación Orientada a Objetos 
 
