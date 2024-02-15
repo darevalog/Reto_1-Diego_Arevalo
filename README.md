@@ -95,6 +95,7 @@ palabra = input("\nIngrese la palabra que desea verificar si es un palindromo: "
 palindromo(palabra)
 ```
 
+
 ### 3. `LISTA DE NÚMEROS PRIMOS`
 Escribir una función que reciba una lista de números y devuelva solo aquellos que son primos. La función debe recibir una lista de enteros y retornar solo aquellos que sean primos.
 
@@ -131,6 +132,7 @@ primos = [num for num in n if es_primo(num)]
 print("\nLos números primos dentro de la lista anterior son " + ", ".join(map(str, primos)) + ".\n")
 ```
 
+
 ### 4. `MÁXIMA SUMA DE DOS NÚMERO CONSECUTIVOS DENTRO UNA LISTA`
 Escribir una función que reciba una lista de números enteros y retorne la mayor suma entre dos elementos consecutivos.
 
@@ -165,4 +167,48 @@ convertida como argumento e imprime el resultado.
 lista = input("\nIngrese una lista de números enteros separados por comas: ")
 lista = [int(num) for num in lista.split(",")]
 print("\nEl mayor valor de la suma de dos números consecutivos en la lista es " + str(mayor_suma_consecutivos(lista)) + ".\n")
+```
+
+
+### 5. `ELEMENTOS CON LOS MISMOS CARÁCTERES`
+Escribir una función que reciba una lista de string y retorne unicamente aquellos elementos que tengan los mismos caracteres. e.g. entrada: `["amor", "roma", "perro"]`, salida `["amor", "roma"]`
+
+```python
+def elementos_con_mismos_caracteres(lista):
+
+    """
+    La función "elementos_con_mismos_caracteres" toma una lista de cadenas y devuelve una lista de
+    tuplas que contienen pares de cadenas que tienen los mismos caracteres.
+    
+    Args:
+      lista: El parámetro "lista" es una lista de cadenas.
+    
+    Returns:
+      una lista de tuplas. Cada tupla contiene dos palabras de la lista de entrada que tienen los mismos
+    caracteres.
+    """
+
+    resultado = []
+
+    for i in range(len(lista)):
+        palabra = sorted(list(lista[i]))
+        for j in range(i + 1, len(lista)):
+            otra_palabra = sorted(list(lista[j]))
+            if set(palabra) == set(otra_palabra):
+                resultado.append((lista[i], lista[j]))
+
+    return resultado
+
+"""
+Este código solicita al usuario que ingrese una lista de palabras separadas por comas. Luego divide
+la cadena de entrada en una lista de palabras usando el método `split()`. Luego se llama a la
+función `elementos_con_mismos_caracteres()` con la lista de palabras como argumento para encontrar
+pares de palabras que tengan los mismos caracteres. Finalmente, los pares resultantes se imprimen
+como una cadena.
+"""
+
+lista = input("\nIngrese una lista de palabras separadas por comas para verificar si tienen los mismos caracteres: ")
+lista = [palabra for palabra in lista.split(",")]
+resultado = elementos_con_mismos_caracteres(lista)
+print("\nLas palabras que tienen los mismos caracteres son " + " ".join(map(str, resultado)) + ".\n")
 ```
