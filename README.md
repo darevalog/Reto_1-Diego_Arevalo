@@ -4,6 +4,7 @@
 
 ### 1. `OPERACIONES BÁSICAS`
 Crear una función que realice operaciones básicas (suma, resta, multiplicación, división) entre dos números, según la elección del usuario, la forma de entrada de la función será los dos operandos y el caracter usado para la operación. *entrada:* `(1,2,"+")`, *salida* `(3)`.
+
 ```python
 def oprecaiones_basicas(numero_1, numero_2, operacion):  
 
@@ -63,3 +64,8 @@ while operacion not in ['+', '-', '*', '/']:
 
 print("El resultado de la operación es " + str(oprecaiones_basicas(numero_1, numero_2, operacion)) + ".")
 ```
+
+
+### 2. `¿ES PALÍNDROMO?`
+Realice una función que permita validar si una palabra es un palíndromo. **Condición:** No se vale hacer slicing para invertir la palabra y verificar que sea igual a la original.
+
