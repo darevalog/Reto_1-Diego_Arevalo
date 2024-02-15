@@ -61,5 +61,5 @@ while operacion not in ['+', '-', '*', '/']:
     print("Error: Operación no válida. Inténtelo de nuevo.")
     operacion = input("Ingrese la operacion que desea realizar (+, -, *, /): ")
 
-print("El resultado de la operación es " + str(oprecaiones_basicas(numero_1, numero_2, operacion)))
+print("El resultado de la operación es " + str(oprecaiones_basicas(numero_1, numero_2, operacion)) + ".")
 ```
