@@ -37,8 +37,8 @@ def oprecaiones_basicas(numero_1, numero_2, operacion):
 
 """
 Se toma la entrada del usuario para dos números y una operación aritmética (+,-, *, /). 
-Luego llama a la función `oprecaiones_basicas` para realizar la operación especificada en los dos números e imprime el resultado,
-procurando que las entradas del usuario sean válidas.
+Luego llama a la función `oprecaiones_basicas` para realizar la operación especificada en los dos números e
+imprime el resultado, procurando que las entradas del usuario sean válidas.
 """
 
 while True:
