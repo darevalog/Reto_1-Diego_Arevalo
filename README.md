@@ -19,7 +19,7 @@ def oprecaiones_basicas(numero_1, numero_2, operacion):
     realizar. Puede ser uno de los siguientes: "+", "-", "*" o "/".
     
     Returns:
-      el resultado de la operación aritmética especificada por el parámetro "operacion".
+      El resultado de la operación aritmética especificada por el parámetro "operacion".
     """ 
 
     if operacion == "+":
@@ -44,25 +44,25 @@ imprime el resultado, procurando que las entradas del usuario sean válidas.
 
 while True:
     try:
-        numero_1 = int(input("Ingrese el primer numero: "))
+        numero_1 = int(input("\nIngrese el primer numero: "))
         break
     except ValueError:
-        print("Error: La entrada debe ser un número entero. Inténtelo de nuevo.")
+        print("\nError: La entrada debe ser un número entero. Inténtelo de nuevo.")
         continue
 while True:    
     try:
         numero_2 = int(input("Ingrese el segundo numero: "))
         break
     except ValueError:
-        print("Error: La entrada debe ser un número entero. Inténtelo de nuevo.")
+        print("\nError: La entrada debe ser un número entero. Inténtelo de nuevo.")
         continue
 
 operacion = input("Ingrese la operacion que desea realizar (+, -, *, /): ")
 while operacion not in ['+', '-', '*', '/']:
-    print("Error: Operación no válida. Inténtelo de nuevo.")
+    print("\nError: Operación no válida. Inténtelo de nuevo.")
     operacion = input("Ingrese la operacion que desea realizar (+, -, *, /): ")
 
-print("El resultado de la operación es " + str(oprecaiones_basicas(numero_1, numero_2, operacion)) + ".")
+print("\nEl resultado de la operación es " + str(oprecaiones_basicas(numero_1, numero_2, operacion)) + ".\n")
 ```
 
 
