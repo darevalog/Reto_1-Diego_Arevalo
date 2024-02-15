@@ -3,7 +3,7 @@
 ## Solución del reto uno de Programación Orientada a Objetos 
 
 ### Operaciones básicas
-´´´
+```python
 def oprecaione_basicas(numero_1, numero_2, operacion):  
     
     if operacion == "+":
@@ -41,4 +41,4 @@ while operacion not in ['+', '-', '*', '/']:
     operacion = input("Ingrese la operacion que desea realizar (+, -, *, /): ")
 
 print("El resultado de la operación es " + str(oprecaione_basicas(numero_1, numero_2, operacion)))
-´´´
+```
