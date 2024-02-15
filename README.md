@@ -95,7 +95,7 @@ palabra = input("\nIngrese la palabra que desea verificar si es un palindromo: "
 palindromo(palabra)
 ```
 
-### 2. `LISTA DE NÚMEROS PRIMOS`
+### 3. `LISTA DE NÚMEROS PRIMOS`
 Escribir una función que reciba una lista de números y devuelva solo aquellos que son primos. La función debe recibir una lista de enteros y retornar solo aquellos que sean primos.
 
 ```python
@@ -129,4 +129,40 @@ n = [int(num) for num in n.split(",")]
 
 primos = [num for num in n if es_primo(num)]
 print("\nLos números primos dentro de la lista anterior son " + ", ".join(map(str, primos)) + ".\n")
+```
+
+### 4. `MÁXIMA SUMA DE DOS NÚMERO CONSECUTIVOS EN UNA LISTA`
+Escribir una función que reciba una lista de números enteros y retorne la mayor suma entre dos elementos consecutivos.
+
+```python
+def mayor_suma_consecutivos(lista):
+
+    """
+    La función "mayor_suma_consecutivos" toma una lista de números y devuelve la mayor suma de números
+    consecutivos de la lista.
+    
+    Args:
+      lista: El parámetro "lista" es una lista de números.
+    
+    Returns:
+      la mayor suma de elementos consecutivos en la lista dada.
+    """
+
+    sumas = []
+    for i in range(len(lista) - 1):
+        suma = lista[i] + lista[i+1]
+        sumas.append(suma)
+    mayor_valor = max(sumas)
+    return mayor_valor
+
+"""
+El código solicita al usuario que ingrese una lista de números enteros separados por comas. Luego
+divide la cadena de entrada por comas y convierte cada elemento en un número entero mediante una
+lista por comprensión. Finalmente, llama a la función `mayor_suma_consecutivos` con la lista
+convertida como argumento e imprime el resultado.
+"""
+
+lista = input("\nIngrese una lista de números enteros separados por comas: ")
+lista = [int(num) for num in lista.split(",")]
+print("\nEl mayor valor de la suma de dos números consecutivos en la lista es " + str(mayor_suma_consecutivos(lista)) + ".\n")
 ```
