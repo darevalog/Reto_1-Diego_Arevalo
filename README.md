@@ -131,7 +131,7 @@ primos = [num for num in n if es_primo(num)]
 print("\nLos números primos dentro de la lista anterior son " + ", ".join(map(str, primos)) + ".\n")
 ```
 
-### 4. `MÁXIMA SUMA DE DOS NÚMERO CONSECUTIVOS EN UNA LISTA`
+### 4. `MÁXIMA SUMA DE DOS NÚMERO CONSECUTIVOS DENTRO UNA LISTA`
 Escribir una función que reciba una lista de números enteros y retorne la mayor suma entre dos elementos consecutivos.
 
 ```python
