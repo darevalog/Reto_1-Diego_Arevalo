@@ -224,4 +224,4 @@ else:
 ```
 
 > [!IMPORTANT]
-> This code would has some problems.
+> This code may present some errors when receiving user data. For example when requesting a data of type "int" and receiving a "str", "bool", etc... Since I only looked for the code to be functional without being completely polished.
