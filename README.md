@@ -222,3 +222,6 @@ if resultado:
 else:
     print("\nNo hay palabras con los mismos caracteres en la lista ingresada.")
 ```
+
+> [!IMPORTANT]
+> This code would has some problems.
