@@ -31,8 +31,12 @@ pares de palabras que tengan los mismos caracteres. Finalmente, los pares result
 como una cadena.
 """
 
-lista = input("\nIngrese una lista de palabras separadas por comas para verificar si tienen los mismos caracteres: ")
-lista = [palabra for palabra in lista.split(",")]
-resultado = elementos_con_mismos_caracteres(lista)
-print("\nLas palabras que tienen los mismos caracteres son " + " ".join(map(str, resultado)) + ".\n")
-
+entrada_usuario = input("\nIngrese una lista de palabras separadas por comas para verificar si tienen los mismos caracteres: ")
+palabras_lista = [palabra.strip() for palabra in entrada_usuario.split(",")]
+resultado = elementos_con_mismos_caracteres(palabras_lista)
+if resultado:
+    print("\nLas palabras que tienen los mismos caracteres son:\n")
+    for tupla in resultado:
+        print(f"• {tupla[0]} y {tupla[1]}.")
+else:
+    print("\nNo hay palabras con los mismos caracteres en la lista ingresada.")
