@@ -227,4 +227,4 @@ else:
 > This code may present some errors when receiving user data. For example when requesting a data of type "int" and receiving a "str", "bool", etc... Since I only looked for the code to be functional without being completely polished. 💎
 > 
 
-> :shipit: Diego Alejandro Arévalo Guevara. 16 de febrero de 2024.
+> :shipit: Diego Alejandro Arévalo Guevara. February 16, 2024.
